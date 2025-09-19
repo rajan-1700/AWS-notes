@@ -1,0 +1,250 @@
+defination->
+virtualization-> process of creating multiples vms , from a single physical hardware system , enabking more efficient resource use.
+
+hypervisor-> software that crates and manages the vms
+
+2 tyeps
+hosted -- another os is setup on the host os(eg.window is my host os and i will be setting up the macos)
+bare metal  --- another os is directly set up on the hardware.(no host os)
+
+why virtualization->
+chaeap, reduces workload, space, energy, easy backup using snapshot, easy recovery
+
+cloud computing ->
+1.on demand delivery of it resources over the internet with pay as you go pricing.
+2. accessgin the resources like databases , storga , software over the internet rather than owning and maintinng physical hardware.
+3.simplest eg. google drive(accessing the storage over the internet).
+
+cloud computing platforms->
+1.aws
+2.microsoft azure
+3.gcp(google cloud platform)
+4.ibm cloud
+5.oracle
+6.alibaba cloud
+7.digital ocean
+8.salesforce
+9.vmware cloud
+10.rackspace cloud
+these companies having dedicated large servers , which they use to provide services to organizations.
+
+
+
+types of cloud computing
+1.iaas
+2.paas
+3.saas
+
+Iaas->
+IaaS → Rent IT infrastructure (servers, storage, network).
+You manage → OS + Apps.
+Provider manages → Hardware + Virtualization.
+Examples → AWS EC2, Google Compute Engine, Azure VMs.
+
+Paas->
+Full form → PaaS = Platform as a Service.
+What you get → Infrastructure + OS + middleware + runtime + development tools.
+What you manage → Only your applications and data.
+What provider manages → Servers, storage, networking, virtualization, OS, runtime, updates.
+Examples →
+AWS Elastic Beanstalk
+Google App Engine
+Heroku
+Microsoft Azure App Services
+Benefits:
+Developers can focus only on coding.
+No headache of patching OS or configuring servers.
+Faster app development and deployment.
+
+
+Saas->
+Full form → SaaS = Software as a Service.
+What you get → A complete, ready-made application.
+What you manage → Usually nothing (sometimes just your data/settings).
+What provider manages → Everything (infrastructure, OS, app, updates, security).
+Examples →
+Gmail, Google Drive
+Microsoft Office 365
+Zoom, Slack
+Salesforce
+Benefits:
+No installation needed (runs on browser/app).
+Always updated automatically.
+Pay-as-you-go or subscription-based.
+Accessible anywhere, anytime.
+
+
+
+
+
+| **Feature**               | **IaaS**                                        | **PaaS**                                                         | **SaaS**                                    |
+| ------------------------- | ----------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------- |
+| **Full form**             | Infrastructure as a Service                     | Platform as a Service                                            | Software as a Service                       |
+| **What you get**          | Raw infrastructure → servers, storage, network  | Ready-made platform → infra + OS + runtime + tools               | Ready-made software application             |
+| **What you manage**       | OS + apps + data                                | Apps + data                                                      | Only your usage/data                        |
+| **What provider manages** | Hardware + virtualization                       | Hardware + OS + runtime                                          | Everything                                  |
+| **Examples**              | AWS EC2, Google Compute Engine, Azure VMs       | AWS Elastic Beanstalk, Google App Engine, Heroku                 | Gmail, Zoom, Google Docs, Office 365        |
+| **Analogy (food)**        | Rent a **kitchen** and cook everything yourself | Rent a **kitchen with utensils + ingredients ready** → just cook | Order **ready-made food** from a restaurant |
+
+
+different types of cloud deployments:
+public , private , hybrid cloud
+
+public cloud-> a shared cloud enviorment where users can access services over the internet , like aws or azure.
+private cloud-> a dedicated cloud enviorment for one org. offering more control and privacy
+hybrid cloud-> A mix of public and private clouds, allowing data and applications to move between them for flexibility.
+
+
+
+few services provided by cloud prodivers
+1.compute services
+2.storage services
+3.databse services
+4.networking services
+5.container services
+6.serverless computing
+7.machine learning services.
+8.IAM(identity and access managment)
+9.monitoring and logging
+10.content deleivery newtwork
+11.backup and disaster recovery
+12.security and complicance tools
+13.virtual private cloud(vpc)
+14.data analytics service
+15.api management
+
+overview of aws:
+1.aws offers a vast range of services, including compute power , storage solutions, networking , databases , and much more.
+2.it offers pay as you go model , pay only for what you  have used , which is ideal for optimizing cost.
+3.right now , aws provides around 200 services in different domains like AI, machine learning , computing power etc.
+
+what makes aws so special->
+scalability
+global reach
+relability
+security
+
+Most popular services provided by aws
+ec2 for scalable computing
+s3 for highly reliable storage.
+rds for managed dbs.
+lambda for serverless computing.
+
+AWS IAM(Identity and access managment)
+1.IAM is a service that helps you securely control access to AWS resources.
+2.It allows you to manage users , roles, and permissions to define who can access what within your AWS enviorment.\
+3.IAM is offered at no additional cost 
+4.Global service
+5.Root account created by default , should not be used or shared.
+6.create users- who want access to aws resources
+7.assign permissions.
+8.create group
+9.create roles
+10.define policies- you can create and attach policies to define fine grained permissions for controlling access to aws resources. 
+11.Manage federated access.(search and see)-extended access
+
+MFA-multi factor authentication
+is an extra layer of security that requires users to provide two or more forms of verification , like a password and a code from their phone , to access their account.
+(username+ password+ security_code)
+
+
+ways of accessing AWS resourcces
+1.the AWS Mangament cnsole provides a graphical, web-based approach
+2.the aws cli provides a command-line , scripting approach.
+3.AWS SDKs and APIs offer programattic, code-based access, allowing users to integrate AWS directly into their applications. 
+
+AWS CLI Config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
