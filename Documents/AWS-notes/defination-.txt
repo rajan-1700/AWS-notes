@@ -154,6 +154,103 @@ ways of accessing AWS resourcces
 3.AWS SDKs and APIs offer programattic, code-based access, allowing users to integrate AWS directly into their applications. 
 
 AWS CLI Config
+commands-->
+1.aws configure
+put access key and secret access key.
+2.aws iam list-users (you will be able to see the created users)
+
+
+AWS IAM best pratices:
+1.avoid using root account except of account setup.
+2.add user to a group and assign permission to group
+3.use password policy or MFA
+4.Use access keys for CLI/SDK
+5.Never share access keys or password.
+audit the permission usig IAM credential report.
+
+
+AWS EC2 (Elastic cloud compute)
+1.AWS EC2(aAmazon elastic compute cloud) is a cloud service that provides resizable virtula servers , called instances, which you can use to run appications.
+2.imagine oyu are running a business and need a server to host your website or application.
+Instead of buying and managing physical servrs, AWS EC2 lets you rent virtual servers in the cloud. These virtual servers are called instances.
+3.you can configure several options.
+-> OS 
+-> RAM
+-> CPU
+-> Disk Space
+-> Network/firewall
+-> How to access the machine?
+
+
+-> Instacen type(select the hardware capacity eg.CPU, memory)
+-> AMI(Amazon machine image) - choose the os and software(Linux, windows, mac)
+->storage-configure the type and size of staorage (eg.EBS volume)
+->security groups-set up firewall rules to control inbound/outbound traffic
+->key Pair-create or use an existing key pair for SSH access.
+
+
+security groups->
+network firewall rules that control inbound and outbound traffic for instances.
+
+
+
+Important points about security groups 
+1.Region specific.
+2.Only 'Allow' rule (but no deny rule).
+3.All inbound traffic blocked and outbound allowed by default. 
+4.You define rules for specific: Protocols (like HTTP, HTTPS, SSH, etc.). Port numbers (e.g., port 80 for HTTP, port 22 for SSH). 
+IP addresses or ranges (e.g., allow traffic only from a specific IP or range of IPs). 
+5.If you allow incoming traffic on a specific port (e.g., port 80 for HTTP), the outgoing response traffic is automatically allowed without an explicit View productsnd rule.
+
+
+
+Some ports you should be aware of:
+HTTP (Port 80) - Unencrypted web traffic.
+HTTPS (Port 443) - Encrypted web traffic (SSL/TLS).
+SSH (Port 22) - Secure remote access to servers (Linux/Unix).
+FTP (Port 21) - File Transfer Protocol (unsecured).
+SFTP (Port 22) - Secure File Transfer Protocol.
+SMTP (Port 25) - Simple Mail Transfer Protocol (email sending).
+RDP (Port 3389) - Remote Desktop Protocol (Windows remote access).
+MySQL (Port 3306) - MySQL database connections.
+PostgreSQL (Port 5432) - PostgreSQL database connections.
+DNS (Port 53) - Domain Name System (converts domain names to IP addresses).
+
+
+SSH into ec2 instance
+1.simply go to instance 
+2. go to connect
+3.go to ec2 instance connect.
+
+SSH EC2 from windows:
+1.generate .ppm key into .ppk using puttygen
+2.open putty configuration and give public ip.
+3.go in credentials and set the private key.
+4.and now go to loggin and open the session.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
